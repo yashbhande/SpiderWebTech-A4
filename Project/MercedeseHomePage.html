@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-Benz</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            height: 100px;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 700;
+            padding-left: 40px;
+        }
+
+        .container section {
+            width: 95%;
+            display: flex;
+        }
+
+        .ok {
+            object-fit: cover;
+            background-repeat: no-repeat;
+        }
+
+        #yash {
+            display: flex;
+            padding-top: 25px;
+        }
+
+        .container1 {
+            height: 70px;
+            background-color: rgb(17, 16, 16, 0.9);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 700;
+            padding-left: 110px;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container1 section {
+            width: 95%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+        }
+
+        #menu1 ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            justify-content: space-between;
+        }
+
+        #menu1 ul li a {
+            text-decoration: none;
+            color: rgb(202, 196, 196);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+
+        #menu1 ul li a svg {
+            color: white;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 40%);
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .grid-item {
+            position: relative;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .age-overlay {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 5px 10px;
+            font-size: 1.2em;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .footer section {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer .column {
+            width: 20%;
+        }
+
+        .footer .column h3 {
+            margin-bottom: 15px;
+        }
+
+        .footer .column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer .column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer .column ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .header {
+            position: relative;
+            width: 60%;
+            padding: 10px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: black;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+            text-decoration: none;
+            color: currentColor;
+        }
+
+        .social-link svg {
+            width: 40px;
+            height: 40px;
+        }
+
+        .copyright {
+            font-size: 16px;
+            margin-left: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <nav class="container">
+        <section>
+            <div id="logo">
+                <img src="https://1000logos.net/wp-content/uploads/2018/04/Mercedes-Benz-Logo.png" width="110px" alt="Mercedes-Benz Logo">
+            </div>
+            <div id="menu">
+                <div id="yash" style="padding-left: 40px; font-weight: 300; font-size: 18px;">Mercedes-Benz</div>
+            </div>
+            <div class="header" style="">
+                <a href="https://github.com/yashbhande" class="social-link" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/codewithyash_/" class="social-link" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.282.24.706.276 1.486.038.843.045 1.096.045 3.232 0 2.137-.007 2.389-.046 3.232-.035.78-.166 1.204-.276 1.486a2.347 2.347 0 0 1-.598.92 2.346 2.346 0 0 1-.92.598c-.282.11-.705.24-1.485.276-.843.038-1.096.045-3.232.045-2.137 0-2.389-.007-3.232-.046-.78-.035-1.204-.166-1.486-.275a2.347 2.347 0 0 1-.92-.598 2.347 2.347 0 0 1-.598-.92c-.11-.282-.24-.705-.276-1.485-.038-.843-.045-1.096-.045-3.232 0-2.136.007-2.389.046-3.232.035-.78.166-1.204.275-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.706-.24 1.486-.276.843-.038 1.096-.045 3.232-.045zm-.14 2.275a5.154 5.154 0 1 0 0 10.308 5.154 5.154 0 0 0 0-10.308zm0 8.493A3.34 3.34 0 0 1 4.529 8a3.34 3.34 0 0 1 3.333-3.333A3.34 3.34 0 0 1 11.195 8a3.34 3.34 0 0 1-3.334 3.334zm4.233-8.869a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/>
+                    </svg>
+                </a>
+                <span class="copyright">&copy; codewithyash</span>
+                
+            </div>
+        </section>
+    </nav>
+
+    <hr style="border: 1px solid gray;">
+
+    <nav class="container1">
+        <section>
+            <div id="menu1">
+                <ul>
+                    <li><a href="#">Buy online</a></li>
+                    <li><a href="#">Finance</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Our models</a></li>
+                    <li><a href="#">Our Brand</a></li>
+                </ul>
+            </div>
+        </section>
+    </nav>
+
+    <div class="ok">
+        <img src="https://wallpaperaccess.com/full/4233253.jpg" alt="Mercedes-Benz Banner" width="100%" height="100%">
+    </div>
+
+    <div style="background-color: black; height: 30px; margin: 0px;padding: 0px;"></div>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="https://wallpaperaccess.com/full/1838893.jpg" alt="Mercedes-Benz 1">
+            <div class="age-overlay">2.55 Cr</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://wallpaperaccess.com/full/4460289.jpg" alt="Mercedes-Benz 2">
+            <div class="age-overlay">5 Cr</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://www.mercedes-benz.co.in/content/india/en/passengercars/models/saloon/v297/overview/_jcr_content/root/responsivegrid/tabs/tabitem/hotspot_module/hotspot_simple_image.component.damq6.3365189842677.jpg/mercedes-eq-eqs-v297-exterior-hotspot-3302x1858-08-2022.jpg" alt="Mercedes-Benz 3">
+            <div class="age-overlay">3.7 Cr</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://wallpaperaccess.com/full/475846.jpg" alt="Mercedes-Benz 4">
+            <div class="age-overlay">4 Cr</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://wallpaperaccess.com/full/824027.jpg" alt="Mercedes-Benz 5">
+            <div class="age-overlay">10 Cr</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://wallpaperaccess.com/full/824033.jpg" alt="Mercedes-Benz 6">
+            <div class="age-overlay">15 Cr</div>
+        </div>
+        
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+    <footer class="footer">
+        <section>
+            <div class="column">
+                <h3>Buy vehicle</h3>
+                <ul>
+                    <li><a href="#">Pre-owned Cars</a></li>
+                    <li><a href="#">Find a new car</a></li>
+                    <li><a href="#">Configure your car</a></li>
+                    <li><a href="#">All brochures</a></li>
+                    <li><a href="#">Model overview</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Buying Guide</h3>
+                <ul>
+                    <li><a href="#">Book a test drive</a></li>
+                    <li><a href="#">Nearest Showroom</a></li>
+                    <li><a href="#">Finance</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Customer services</h3>
+                <ul>
+                    <li><a href="#">Book a service appointment</a></li>
+                    <li><a href="#">Owner's Manuals</a></li>
+                    <li><a href="#">Grievances Redressal mechanism</a></li>
+                    <li><a href="#">Service warranty terms and conditions</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Technology</h3>
+                <ul>
+                    <li><a href="#">Electric mobility</a></li>
+                    <li><a href="#">About Mercedes me</a></li>
+                    <li><a href="#">Connect services</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>About us</h3>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Secretarial Compliance Disclosure</a></li>
+                    <li><a href="#">Press Release</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Mercedes-Benz Collection</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
